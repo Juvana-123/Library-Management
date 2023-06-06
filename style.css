@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 15px;
+  }
+  
+  .logo P {
+    height: 40px;
+    padding-top: 20px;
+    font-family: cursive;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 20px;
+    padding-top: 20px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
