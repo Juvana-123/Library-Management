@@ -66,10 +66,23 @@ function sortBooksByRating(array) {
     return b.rating - a.rating;
   });
 }
+var countElement = document.createElement("p");
+countElement.style.position = "fixed";
+countElement.style.top = "10px";
+countElement.style.right = "10px";
+countElement.style.padding = "10px";
+countElement.style.background = "lightgray";
+countElement.style.borderRadius = "5px";
+countElement.style.fontWeight = "bold";
+
+document.body.appendChild(countElement);
 
 function updateCount(count) {
-  countElement.textContent = count;
+  countElement.innerText = "Count: " + count;
 }
+
+
+
 // Function to add books to the table
 function addBooks(array, tableId, listId) {
   var bookTable = document.getElementById(tableId);
