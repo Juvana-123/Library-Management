@@ -6,25 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/d79a3d359f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+  
     <nav class="navbar">
-        <div class="logo">
+        <li class="logo">
           <p>LIBIAN</p>
-        </div>
+        </li>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li class="dropdown">
-            <a href="#">Category</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Novel</a></li>
-              <li><a href="#">Crime</a></li>
-              <li><a href="#">Horror</a></li>
+          <li><a href="index.html">Home <i class="fa-solid fa-house"></i></i></i></a></li>
+          <li class="dropdown" id="dropdown">
+            <a href="#">Category <i class="fa-solid fa-book"></i></a>
+            <ul class="dropdown-menu" id="dropdown-menu" >
+              <li><a href="#" onclick="showContenta()"id="a">All Books</a></li>
+              <li><a href="#blurred-contente" onclick="showContente()" id="e">Education</a></li>
+              <li><a href="#blurred-contentn" onclick="showContentn()" id="n">Novel</a></li>
+              <li><a href="#blurred-contentc" onclick="showContentc()" id="c">Crime</a></li>
+              <li><a href="#blurred-contenth" onclick="showContenth()" id="h">Horror</a></li>
             </ul>
           </li>
-          <li><a href="#">Login</a></li>
+          <li><a href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></li>
+          <li><a href="contact.html">Contact us <i class="fa-solid fa-address-book"></i></a></li>
         </ul>
       </nav>
+      <div id="header">
+      <div class="header-content">
+        <p>Library is an arena of possibility,<br> opening both a window into the soul <br>and a door onto the world </p>
+      </div>
+    </div>
+    
+    <div id="blurred-contenta" class="blurred-content">
+      <div id="bookList" class="box">
+        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="book-container">
+      <table id="book-table0" data-filter-control="true" data-show-search-clear-button="true">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list0"></tbody>
+      </table>
+      <span id="count" class="count">0</span>
+    </div>
+    </div>
+    
+
+    <div id="blurred-contente" class="blurred-content">
+      <div id="bookList" class="box">
+        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="book-container">
+      <table id="book-table1">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list1"></tbody>
+      </table>
+    </div>
+    </div>
+    
+    <div id="blurred-contentn" class="blurred-content">
+      <div id="bookList" class="box">
+        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="book-container">
+      <table id="book-table2">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list2"></tbody>
+      </table>
+    </div>
+    </div>
+    
+    <div id="blurred-contentc" class="blurred-content">
+      <div id="bookList" class="box">
+        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="book-container">
+      <table id="book-table3">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list3"></tbody>
+      </table>
+    </div>
+    </div>
+    <div id="blurred-contenth" class="blurred-content">
+      <div id="bookList" class="box">
+        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <button id="searchButton"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="book-container">
+      <table id="book-table4">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="book-list4"></tbody>
+      </table>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+
+
+    
+
+
+
 </body>
 </html>

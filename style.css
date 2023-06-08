@@ -1,3 +1,10 @@
+body{
+  
+  background-image: url(img/Untitled\ design.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .navbar {
     background-color: #333;
     color: #fff;
@@ -6,12 +13,15 @@
     align-items: center;
     padding: 20px;
     height: 15px;
+    margin-top: 0;
   }
   
   .logo P {
     height: 40px;
-    padding-top: 20px;
-    font-family: cursive;
+    padding-top: 8px;
+    font-family:cursive;
+    color: rgb(248, 9, 248);
+    font-weight: bold;
   }
   
   .menu {
@@ -43,5 +53,100 @@
   
   .dropdown:hover .dropdown-menu {
     display: block;
+    transition: 1s;
   }
+
   
+.header-content p{
+  font-size: xx-large;
+  text-indent: 1em;
+  margin-top: 15%;
+  margin-left: 10%;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+}
+.blurred-content {
+  display:none;
+  position: fixed;
+  top: 25%;
+  left: 8%;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  padding: 10%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th:last-child, td:last-child {
+  text-align: center;
+}
+.book-container {
+  max-height: 300px; /* Adjust the desired maximum height of the box */
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 2% 8%;
+}
+/* Search Bar */
+button {
+  padding: 6px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.box{
+  height: 30px;
+  width: 200px; 
+  display: flex;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 30px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input{
+  width: 400px;
+}
+.box input{
+  width: 0;
+  outline:none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+.box a .fast{
+  color: aquamarine;
+  font-size: 18px;
+}
+#searchButton{
+  border-radius: 48%;
+}
+/* CSS for count display */
+#count {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
