@@ -67,6 +67,9 @@ function sortBooksByRating(array) {
   });
 }
 
+function updateCount(count) {
+  countElement.textContent = count;
+}
 // Function to add books to the table
 function addBooks(array, tableId, listId) {
   var bookTable = document.getElementById(tableId);
@@ -119,13 +122,15 @@ function addBooks(array, tableId, listId) {
     for (var i = 0; i < rows.length; i++) {
       var title = rows[i].getElementsByTagName("td")[0];
       var author = rows[i].getElementsByTagName("td")[1];
-
+      var count = 0;
       if (title.textContent.toUpperCase().indexOf(filter) > -1 || author.textContent.toUpperCase().indexOf(filter) > -1) {
         rows[i].style.display = "";
+        count++;
       } else {
         rows[i].style.display = "none";
       }
     }
+    updateCount(count);
   });
 }
 
