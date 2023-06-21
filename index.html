@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library Management</title>
+     
     <link rel="stylesheet" href="style.css">
     
     <script src="https://kit.fontawesome.com/d79a3d359f.js" crossorigin="anonymous"></script>
@@ -42,11 +43,11 @@
     
     <div id="blurred-contenta" class="blurred-content">
       <div id="bookList" class="box">
-        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <input type="text" id="searchBar0"  placeholder="Search for a book">
         <button id="searchButton"><i class="fas fa-search"></i></button>
       </div>
       <div class="book-container">
-      <table id="book-table0" data-filter-control="true" data-show-search-clear-button="true">
+      <table id="book-table0" >
         <thead>
           <tr>
             <th>Title</th>
@@ -57,14 +58,12 @@
         </thead>
         <tbody id="book-list0"></tbody>
       </table>
-      <span id="count" class="count" >0</span>
+      <span id="count0" class="count">0</span>
     </div>
     </div>
-    
-
     <div id="blurred-contente" class="blurred-content">
       <div id="bookList" class="box">
-        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <input type="text" id="searchBar1"  placeholder="Search for a book">
         <button id="searchButton"><i class="fas fa-search"></i></button>
       </div>
       <div class="book-container">
@@ -79,12 +78,13 @@
         </thead>
         <tbody id="book-list1"></tbody>
       </table>
+      <span id="count1" class="count">0</span>
     </div>
     </div>
     
     <div id="blurred-contentn" class="blurred-content">
       <div id="bookList" class="box">
-        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <input type="text" id="searchBar2"  placeholder="Search for a book">
         <button id="searchButton"><i class="fas fa-search"></i></button>
       </div>
       <div class="book-container">
@@ -99,12 +99,13 @@
         </thead>
         <tbody id="book-list2"></tbody>
       </table>
+      <span id="count2" class="count">0</span>
     </div>
     </div>
     
     <div id="blurred-contentc" class="blurred-content">
       <div id="bookList" class="box">
-        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <input type="text" id="searchBar3"  placeholder="Search for a book">
         <button id="searchButton"><i class="fas fa-search"></i></button>
       </div>
       <div class="book-container">
@@ -119,11 +120,12 @@
         </thead>
         <tbody id="book-list3"></tbody>
       </table>
+      <span id="count3" class="count">0</span>
     </div>
     </div>
     <div id="blurred-contenth" class="blurred-content">
       <div id="bookList" class="box">
-        <input type="text" id="searchBar"  placeholder="Search for a book">
+        <input type="text" id="searchBar4"  placeholder="Search for a book">
         <button id="searchButton"><i class="fas fa-search"></i></button>
       </div>
       <div class="book-container">
@@ -138,15 +140,31 @@
         </thead>
         <tbody id="book-list4"></tbody>
       </table>
+      <span id="count4" class="count">0</span>
     </div>
     
+  </div>
+<div id="formContainer" ">
+  <span id="formCloseButton">&times;</span>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="name">Book Title:</label>
+    <input type="text" id="title" name="title" required><br>
+    <label for="name">Book Author:</label>
+    <input type="text" id="author" name="author" required><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+        <button type="button" id="close-btn">X</button>
+      </form>
     </div>
     <script src="script.js"></script>
-
-
-    
-
-
-
 </body>
 </html>
